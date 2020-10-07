@@ -56,4 +56,6 @@ sudo docker-compose up --build -d
 #Generamos la imagen
 sudo docker build -t <IMAGE_NAME>
 #Correr imagen para crear contenedor
-sudo docker run -d -p 5000:5000 flask-tutorial
+sudo docker run -d -p 5000:5000 IMAGE_NAME
+#Debuguear un contenedor
+sudo docker logs CONTAINER_ID
