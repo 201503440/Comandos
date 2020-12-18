@@ -59,3 +59,8 @@ sudo docker build -t <IMAGE_NAME>
 sudo docker run -d -p 5000:5000 IMAGE_NAME
 #Debuguear un contenedor
 sudo docker logs CONTAINER_ID
+
+
+#***************************************************************************
+#mongo container
+sudo docker exec -it CONTAINER_ID mongo
