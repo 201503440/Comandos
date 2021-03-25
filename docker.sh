@@ -64,3 +64,8 @@ sudo docker logs CONTAINER_ID
 #***************************************************************************
 #mongo container
 sudo docker exec -it CONTAINER_ID mongo
+
+#Eliminar contenedores
+sudo docker rm -f $(sudo docker ps -q)
+#Eliminar imagenes
+sudo docker rmi $(docker images -q)
